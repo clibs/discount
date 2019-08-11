@@ -2,6 +2,7 @@
 
 {
   sh ./configure.sh --prefix=$PREFIX
+  make blocktags
   if $(grep -q '<markdown.h>' * c); then
     sed 's/markdown.h/discount\/markdown.h/g' -i *.c
   fi
