@@ -5,7 +5,6 @@
   "makefile": "https://git.io/fj7hz#https://raw.githubusercontent.com/clibs/discount/master/scripts/clib-configure",
   "configure": "sh clib-configure",
   "src": [
-    "LICENSE",
     "COPYRIGHT",
     "VERSION",
     "configure.sh",
