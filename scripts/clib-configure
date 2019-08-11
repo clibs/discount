@@ -3,6 +3,6 @@
 {
   sh ./configure.sh --prefix=$PREFIX
   if $(grep -q '<markdown.h>' * c); then
-    sed 's/markdown.h/markdown\/markdown.h/g' -i *.c
+    sed 's/markdown.h/discount\/markdown.h/g' -i *.c
   fi
 }
