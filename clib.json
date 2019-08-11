@@ -37,7 +37,6 @@
     "dumptree.c",
     "generate.c",
     "github_flavoured.c",
-    "main.c",
     "mktags.c",
     "tags.c",
     "toc.c",
