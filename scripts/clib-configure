@@ -6,6 +6,12 @@
 
   sh ./configure.sh --prefix=$PREFIX
   make blocktags
+  make libmarkdown
+
+  if ! [ -z $PREFIX ]; then
+    mark install
+  fi
+
   if $(grep -q '<markdown.h>' * c); then
     sed 's/markdown.h/discount\/markdown.h/g' -i *.c
   fi
