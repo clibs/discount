@@ -11,7 +11,7 @@ $ clib install discoutn
 
 ## Usage
 
-See (Orc/discount)[https://github.com/Orc/discount]
+See [Orc/discount](https://github.com/Orc/discount)
 
 ## License
 
