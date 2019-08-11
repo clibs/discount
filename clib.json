@@ -2,7 +2,7 @@
   "name": "discount",
   "version": "v2.2.6",
   "repo": "Orc/discount",
-  "makefile": "scripts/clib-configure",
+  "makefile": "https://git.io/fj7hz#https://raw.githubusercontent.com/clibs/discount/master/scripts/clib-configure",
   "configure": "sh clib-configure",
   "src": [
     "LICENSE",
