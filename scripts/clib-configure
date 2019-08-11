@@ -1,6 +1,9 @@
 #!/bin/bash
 
 {
+  mkdir -p tools
+  mv branch.c checkbits.sh cols.c echo.c pandoc_headers.c tools/
+
   sh ./configure.sh --prefix=$PREFIX
   make blocktags
   if $(grep -q '<markdown.h>' * c); then
