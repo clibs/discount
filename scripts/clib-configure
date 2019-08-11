@@ -1,5 +1,5 @@
 #!/bin/bash
 
 {
-  ./configure.sh --prefix=$PREFIX
+  sh ./configure.sh --prefix=$PREFIX
 }
