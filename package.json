@@ -1,0 +1,16 @@
+{
+  "name": "@clibs/discount",
+  "version": "v2.2.6",
+  "description": "My C implementation of John Gruber's Markdown markup language - http://www.pell.portland.or.us/~orc/Code/discount/",
+  "scripts": {
+    "version": "./scripts/update-clib-json && test -d .git && git add clib.json",
+    "install": "clib install --skip-cache"
+  },
+  "keywords": [
+    "c",
+    "library",
+    "markdown"
+  ],
+  "author": "https://github.com/Orc/discount",
+  "license": "BSD-2-Clause"
+}

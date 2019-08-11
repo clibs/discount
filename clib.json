@@ -1,0 +1,6 @@
+{
+  "name": "discount",
+  "version": "0.0.0",
+  "makefile": "scripts/clib-configure",
+  "configure": "sh clib-configure"
+}
