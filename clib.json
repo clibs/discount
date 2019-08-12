@@ -27,6 +27,7 @@
     "Makefile.in",
     "markdown.c",
     "markdown.h",
+    "mktags.c",
     "mkdio.c",
     "mkdio.h.in",
     "resource.c",
@@ -38,5 +39,6 @@
     "version.c.in",
     "xml.c",
     "xmlpage.c"
+
   ]
 },
