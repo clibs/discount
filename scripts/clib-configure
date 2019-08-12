@@ -4,12 +4,14 @@
   mkdir -p tools
   mv branch.c checkbits.sh cols.c echo.c pandoc_headers.c tools/
 
+  mv .mktags.c mktags.c
   sed 's/<discount\/markdown.h>/<markdown.h>/g' -i *.c
   sed 's/<discount\/mkdio.h>/<mkdio.h>/g' -i *.c
 
   sh ./configure.sh --prefix=$PREFIX
   make libmarkdown
-  rm -f mktags.c mktags.o mktags
+  mv mktags.c .mktags.c
+  rm -f mktags.o mktags
 
   if ! [ -z $PREFIX ]; then
     mark install
