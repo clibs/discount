@@ -6,6 +6,7 @@
 
   sh ./configure.sh --prefix=$PREFIX
   make libmarkdown
+  rm -f mktags.c mktags.o mktags
 
   if ! [ -z $PREFIX ]; then
     mark install
