@@ -12,4 +12,6 @@
   fi
 
   sed 's/<markdown.h>/<discount\/markdown.h>/g' -i *.c
+
+  sed 's/<mkdio.h>/<discount\/mkdio.h>/g' -i *.c
 }
