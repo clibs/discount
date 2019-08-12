@@ -4,6 +4,9 @@
   mkdir -p tools
   mv branch.c checkbits.sh cols.c echo.c pandoc_headers.c tools/
 
+  sed 's/<discount\/markdown.h>/<markdown.h>/g' -i *.c
+  sed 's/<discount\/mkdio.h>/<mkdio.h>/g' -i *.c
+
   sh ./configure.sh --prefix=$PREFIX
   make libmarkdown
   rm -f mktags.c mktags.o mktags
@@ -13,9 +16,7 @@
   fi
 
   sed 's/<markdown.h>/<discount\/markdown.h>/g' -i *.c
-
   sed 's/<mkdio.h>/<discount\/mkdio.h>/g' -i *.c
-
   sed "s/VERSION/\"$(cat VERSION)\"/g" -i version.c
   sed 's/BRANCH/""/g' -i version.c
 }
