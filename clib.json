@@ -8,6 +8,7 @@
     "COPYRIGHT",
     "VERSION",
 
+    "librarian.sh",
     "configure.sh",
     "configure.inc",
     "libmarkdown.pc.in",
