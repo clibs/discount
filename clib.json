@@ -11,6 +11,7 @@
     "amalloc.h",
     "basename.c",
     "configure.sh",
+    "configure.inc",
     "Csio.c",
     "css.c",
     "cstring.h",
