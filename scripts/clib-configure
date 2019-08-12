@@ -5,14 +5,11 @@
   mv branch.c checkbits.sh cols.c echo.c pandoc_headers.c tools/
 
   sh ./configure.sh --prefix=$PREFIX
-  make blocktags
   make libmarkdown
 
   if ! [ -z $PREFIX ]; then
     mark install
   fi
 
-  if $(grep -q '<markdown.h>' * c); then
-    sed 's/\<markdown.h\>/<discount\/markdown.h>/g' -i *.c
-  fi
+  sed 's/<markdown.h>/<discount\/markdown.h>/g' -i *.c
 }
